@@ -1,0 +1,57 @@
+import setuptools
+
+with open('VERSION.txt', 'r') as f:
+    version = f.read().strip()
+
+setuptools.setup(
+    name="odoo12-addons-akretion-pos-addons-llc",
+    description="Meta package for akretion-pos-addons-llc Odoo addons",
+    version=version,
+    install_requires=[
+        'odoo12-addon-hw_printer_network',
+        'odoo12-addon-pos_cashier_select',
+        'odoo12-addon-pos_category_multi',
+        'odoo12-addon-pos_debranding',
+        'odoo12-addon-pos_debt_notebook',
+        'odoo12-addon-pos_debt_notebook_rewards',
+        'odoo12-addon-pos_debt_notebook_sync',
+        'odoo12-addon-pos_discount_total',
+        'odoo12-addon-pos_invoice_pay',
+        'odoo12-addon-pos_logout',
+        'odoo12-addon-pos_longpolling',
+        'odoo12-addon-pos_mobile',
+        'odoo12-addon-pos_mobile_restaurant',
+        'odoo12-addon-pos_multi_session',
+        'odoo12-addon-pos_multi_session_restaurant',
+        'odoo12-addon-pos_multi_session_sync',
+        'odoo12-addon-pos_order_cancel',
+        'odoo12-addon-pos_order_cancel_restaurant',
+        'odoo12-addon-pos_order_note',
+        'odoo12-addon-pos_order_printer_product',
+        'odoo12-addon-pos_order_receipt_custom',
+        'odoo12-addon-pos_orderline_absolute_discount',
+        'odoo12-addon-pos_orders_history',
+        'odoo12-addon-pos_orders_history_reprint',
+        'odoo12-addon-pos_orders_history_return',
+        'odoo12-addon-pos_partner_sync',
+        'odoo12-addon-pos_pin',
+        'odoo12-addon-pos_print_method',
+        'odoo12-addon-pos_printer_network',
+        'odoo12-addon-pos_product_available',
+        'odoo12-addon-pos_product_available_negative',
+        'odoo12-addon-pos_product_category_discount',
+        'odoo12-addon-pos_qr_payments',
+        'odoo12-addon-pos_qr_scan',
+        'odoo12-addon-pos_qr_show',
+        'odoo12-addon-pos_receipt_custom_template',
+        'odoo12-addon-pos_restaurant_base',
+        'odoo12-addon-pos_wechat',
+        'odoo12-addon-qr_payments',
+        'odoo12-addon-wechat',
+    ],
+    classifiers=[
+        'Programming Language :: Python',
+        'Framework :: Odoo',
+        'Framework :: Odoo :: 12.0',
+    ]
+)
